@@ -1,0 +1,19 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.error {
+  height: 100vh;
+  display: grid;
+  place-items: center;
+  background-color: rgb(254, 175, 175);
+}
+
+.error h1 {
+  font-size: 5rem;
+  font-weight: 900;
+  font-family: cursive;
+  color: rgb(175, 0, 0);
+}
