@@ -4,11 +4,15 @@
   box-sizing: border-box;
 }
 
+body {
+  background-color: #dedede;
+}
+
 .error {
   height: 100vh;
   display: grid;
   place-items: center;
-  background-color: rgb(254, 175, 175);
+  background-color: rgb(255, 175, 175);
 }
 
 .error h1 {
@@ -17,3 +21,123 @@
   font-family: cursive;
   color: rgb(175, 0, 0);
 }
+a {
+  text-decoration: none;
+  font-size: 32px;
+  font-weight: 700;
+}
+.activeLink {
+  color: rgb(255, 75, 105);
+}
+
+.Link {
+  color: rgb(0, 0, 155);
+}
+.Link:hover {
+  color: rgb(255, 75, 105);
+  transition: 0.5s ease-in-out;
+}
+
+
+input{
+  padding: 8px 12px;
+  border-radius: 10px;
+  margin: 14px  0;
+  width: 25%;
+  outline: none;
+  border: 2px solid yellowgreen;
+}
+
+table,
+thead,
+tbody,
+th,
+tr,
+td {
+  border: 2px solid #fce2d2;
+  text-align: center;
+  font-size: 1.8rem;
+  cursor: pointer;
+}
+table {
+  background-color: #f8efe9;
+}
+
+th {
+  background-color: #fce2d2;
+}
+
+tr:hover {
+  background-color: #fce2d2;
+  transition: 0.3s ease;
+}
+
+.unique {
+  border: none;
+}
+
+.calendar {
+  position: absolute;
+  top: 42.5%;
+  right: 80%;
+}
+
+.modal-dialog {
+  max-width: 600px;
+}
+
+.modal-content {
+  height: 550px;
+  padding: 1.5rem;
+}
+
+.cs {
+  position: relative;
+  left: 25%;
+  bottom: 12.5%;
+  margin-bottom: 1.6rem;
+}
+#dvs {
+  position: relative;
+  left: 120%;
+  bottom: 35%;
+  width: 75%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#dvs2 {
+  position: relative;
+  bottom: 65%;
+  width: 75%;
+  height: 9%;
+  text-transform: capitalize;
+}
+
+.modal-dialog,
+.modal-content {
+  height: 96%;
+}
+
+.modal-body {
+  max-height: calc(100% - 70px);
+  overflow-y: scroll;
+}
+
+.table-container {
+  max-height: 250px;
+  overflow-y: auto;
+}
+
+.table-container::-webkit-scrollbar {
+  width: 0px;
+}
+
+.logInParent {
+  margin-left: 20rem;
+}
+
+/* .table-container::-webkit-scrollbar-thumb {
+    background-color: #888; 
+  } */
