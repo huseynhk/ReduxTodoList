@@ -8,12 +8,20 @@ export const userSlice = createSlice({
   name: "users",
   initialState,
   reducers: {
-    addUser: (state, actions) => {
-      state.users.push(actions.payload);
-    },
+    // addUser: (state, actions) => {
+    //   state.users.push(actions.payload);
+    // },
 
+    addUser: (state, action) => {
+      return {
+        ...state,
+        users: [...state.users, action.payload],
+      };
+    },
     deleteUser: (state, actions) => {
-      const existUser = state.users.find((exist) => exist.id === actions.payload.id);
+      const existUser = state.users.find(
+        (exist) => exist.id === actions.payload.id
+      );
       if (existUser) {
         return {
           ...state,

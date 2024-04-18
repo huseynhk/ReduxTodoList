@@ -27,8 +27,12 @@ export const counterSlice = createSlice({
       state.count += action.payload;
     },
 
+    // decrementAmounth: (state, action) => {
+    //   state.count -= action.payload;
+    // },
     decrementAmounth: (state, action) => {
-      state.count -= action.payload;
+      const number = state.count - action.payload;
+      state.count = number < 0 ? 0 : number;
     },
   },
 });
